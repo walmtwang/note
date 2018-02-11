@@ -50,24 +50,24 @@
 - 切入点（*Pointcut*）: 
   - 指定一个通知将被引发的一系列连接点的集合。
   - AOP框架必须允许开发者指定切入点：例如，使用正则表达式。
-  -  Spring定义了Pointcut接口，用来组合MethodMatcher和ClassFilter，可以通过名字很清楚的理解， MethodMatcher是用来检查目标类的方法是否可以被应用此通知，而ClassFilter是用来检查Pointcut是否应该应用到目标类上。
+  - Spring定义了Pointcut接口，用来组合MethodMatcher和ClassFilter，可以通过名字很清楚的理解， MethodMatcher是用来检查目标类的方法是否可以被应用此通知，而ClassFilter是用来检查Pointcut是否应该应用到目标类上。
 - 引入（*Introduction*）: 
   - 添加方法或字段到被通知的类。
-  -  Spring允许引入新的接口到任何被通知的对象。
+  - Spring允许引入新的接口到任何被通知的对象。
   - 例如，你可以使用一个引入使任何对象实现 IsModified接口，来简化缓存。
   - Spring中要使用Introduction, 可有通过DelegatingIntroductionInterceptor来实现通知，通过DefaultIntroductionAdvisor来配置Advice和代理类要实现的接口。
 - 目标对象（*Target Object*）: 
   - 包含连接点的对象。也被称作被通知或被代理对象。POJO
 - AOP代理（*AOP Proxy*）: 
   - AOP框架创建的对象，包含通知。
-  -  在Spring中，AOP代理可以是JDK动态代理或者CGLIB代理。
+  - 在Spring中，AOP代理可以是JDK动态代理或者CGLIB代理。
 - 织入（*Weaving*）: 
   - 组装方面来创建一个被通知对象。这可以在编译时完成（例如使用AspectJ编译器），也可以在运行时完成。
   - Spring和其他纯Java AOP框架一样，在运行时完成织入。
 
 ### Spring AOP组件
 
-![](https://github.com/walmt/interview_questions/java/img/1.png)
+![](https://github.com/walmt/interview_questions/blob/master/Java/img/1.png?raw=true)
 
 ### 如何使用Spring AOP
 
@@ -312,7 +312,7 @@
 
   - 获取可以应用到此方法上的通知链（Interceptor Chain）。
     - 如果有，则应用通知，并执行joinpoint；
-    -  如果没有,则直接反射执行joinpoint。
+    - 如果没有,则直接反射执行joinpoint。
 
 - 而这里的关键是通知链是如何获取的以及它又是如何执行的，下面逐一分析下。
 
