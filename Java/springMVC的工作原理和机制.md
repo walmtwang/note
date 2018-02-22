@@ -1,4 +1,4 @@
-## [springMVC 的工作原理和机制](http://www.cnblogs.com/zbf1214/p/5265117.html)
+## [springMVC的工作原理和机制](http://www.cnblogs.com/zbf1214/p/5265117.html)
 
 ### 工作原理
 
