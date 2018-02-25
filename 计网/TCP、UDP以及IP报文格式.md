@@ -1,6 +1,6 @@
-# [tcp报文格式](http://www.cnblogs.com/xinyuyuanm/archive/2013/04/17/3026279.html)
+# [TCP报文格式](http://www.cnblogs.com/xinyuyuanm/archive/2013/04/17/3026279.html)
 
-![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/1.jpg)
+![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/1.jpg?raw=true)
 
 - 源端口（Source Port）：
   - 16位的源端口字段包含初始化通信的端口号。源端口和IP地址的作用是标识报文的返回地址。
@@ -38,3 +38,45 @@
   - 至少1字节的可变长字段，标识哪个选项（如果有的话）有效。如果没有选项，这个字节等于0,说明选项的结束。这个字节等于1表示无需再有操作；等于2表示下四个字节包括源机器的最大长度（Maximum Segment Size,MSS）。
 - 填充（Padding）：
   - 这个字段中加入额外的零，以保证TCP头是32的整数倍。
+
+# [UDP报文格式](http://blog.csdn.net/kernel_jim_wu/article/details/7447377)
+
+![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/5.png?raw=true)
+
+- 源端口号和目的端口号如上和TCP的相同。
+- UDP长度：UDP报文的字节长度（包括首部和数据）。
+- UDP校验和: 检验UDP首部和数据部分的正确性。
+
+# [IP报文格式](http://blog.csdn.net/kernel_jim_wu/article/details/7447377)
+
+![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/6.png?raw=true)
+
+- 版本：指IP协议的版本。
+- 首部长度：首部的长度。
+- 服务类型：如下图：![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/7.png?raw=true)
+  - 其中优先级用来区别优先级别不同的IP报文。
+  - D表示要求有更低的时延。
+  - T表示要求有更高的吞吐量。
+  - R表示要求有更高的可靠性。
+- 总长度：
+  - 报文的长度。
+- 标识：
+  - 由于数据报长度超过传输网络的MTU（最大传输单元)而必须分片，这个标识字段的值被复制到所有数据报分片的标识字段中，使得这些分片在达到最终的目的地时可以依照标识字段的内容重新组成原先的数据报。
+- 标志：
+  - 最低位是MF，MF=1时，表示后面还有分片。
+  - 中间位的DF，DF=1时，表示不能分片。
+- 片偏移： 
+  - 和前面的数据分片相关，是本分片在原先数据报文中相对首位的偏移位。
+- 生存时间：
+  - 数据报在网络中存活的时间，所允许通过的路由器的最大数量，每通过一个路由器，该值自动减一，如果数值为0，路由器就可以把该数据报丢弃。
+- 协议： 
+  - 指出数据报携带的数据是使用何种协议，以便目的主机的IP层能知道次数据报上交到哪一个进程（不同协议有一个专门不同的进程处理）。
+- 首部校验位和：
+  - 对首部进行校验运算。
+  - 校验方法 ：
+    -  在发送端，将IP数据报首部划分为多个16位的二进制序列，并将首部校验和字段置为0，用反码运算将所有16位序列对位相加后，将得到的和的反码写入首部校验和字段。
+    - 接收端接收到数据报后，将数据报首部的所有字段组织成多个16位的二进制序列，再使用反码运算相加一次，将得到的结果取反。如果结果为0代表没出错，否则出错。
+- 源地址：
+  - 发送数据报的节点地址。
+- 目的地址：
+  - 接受数据报的节点地址。 
