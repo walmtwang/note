@@ -15,4 +15,6 @@
   - 每个节点有M-1个key，并且以升序排列。
   - 位于a和b的 key 的子节点的值位于a和b对应的Value之间。
   - 其它节点至少有M/2个子节点。
-- 下图是一个M=4 阶的B树：![B树]()
+- 下图是一个M=4 阶的B树：![B树](https://github.com/walmt/interview_questions/blob/master/%E7%AE%97%E6%B3%95&%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/img/1.png?raw=true)
+- 可以看到B树是2-3树的一种扩展，他允许一个节点有多于2个的元素。
+- 下面是往B树中依次插入**6 10 4 14 5 11 15 3 2 12 1 7 8 8 6 3 6 21 5 15 15 6 32 23 45 65 7 8 6 5 4**的演示动画：![](https://github.com/walmt/interview_questions/blob/master/%E7%AE%97%E6%B3%95&%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/img/1.gif?raw=true)
