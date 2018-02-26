@@ -6,14 +6,14 @@
 
 ##### B+树
 
-- 一个经典的**B+树索引数据结构**见下图：![](https://github.com/walmt/interview_questions/blob/master/数据库/img/3.png?raw=true)
+- 一个经典的**B+树索引数据结构**见下图：![](https://github.com/walmt/interview_questions/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/img/3.jpg?raw=true)
 - **B+树是一个平衡的多叉树，从根节点到每个叶子节点的高度差值不超过1，而且同层级的节点间有指针相互链接。**
 - 在B+树上的常规检索，从根节点到叶子节点的搜索效率基本相当，不会出现大幅波动，而且基于索引的顺序扫描时，也可以利用双向指针快速左右移动，效率非常高。
 - 因此，B+树索引被广泛应用于数据库、文件系统等场景。顺便说一下，xfs文件系统比ext3/ext4效率高很多的原因之一就是，它的文件及目录索引结构全部采用B+树索引，而ext3/ext4的文件目录结构则采用Linked list, hashed B-tree、Extents/Bitmap等索引数据结构，因此在高I/O压力下，其IOPS能力不如xfs。
 
 ##### 哈希索引
 
-- 而**哈希索引的示意图**则是这样的：![](https://github.com/walmt/interview_questions/blob/master/数据库/img/4.png?raw=true)
+- 而**哈希索引的示意图**则是这样的：![](https://github.com/walmt/interview_questions/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/img/4.jpg?raw=true)
 - 简单地说，**哈希索引就是采用一定的哈希算法**，把键值换算成新的哈希值，检索时不需要类似B+树那样从根节点到叶子节点逐级查找，只需一次哈希算法即可立刻定位到相应的位置，速度非常快。
 
 ##### 区别

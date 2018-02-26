@@ -171,14 +171,14 @@ show engines;
     - 如果没有显式指定，则MySQL系统会自动选择一个可以唯一标识数据记录的列作为主键。
     - 如果不存在这种列，则MySQL自动为InnoDB表生成一个隐含字段作为主键，这个字段长度为6个字节，类型为长整形。
 
-  ![](https://github.com/walmt/interview_questions/blob/master/数据库/img/1.jpg?raw=true)
+  ![](https://github.com/walmt/interview_questions/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/img/1.jpg?raw=true)
 
 - 第二个与MyISAM索引的不同是InnoDB的辅助索引data域存储相应记录主键的值而不是地址。
 
   - 换句话说，InnoDB的所有辅助索引都引用主键作为data域。
   - 例如，下图为定义在Col3上的一个辅助索引：
 
-  ![](https://github.com/walmt/interview_questions/blob/master/数据库/img/2.jpg?raw=true)
+  ![](https://github.com/walmt/interview_questions/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/img/2.jpg?raw=true)
 
 - 这里以英文字符的ASCII码作为比较准则。聚集索引这种实现方式使得按主键的搜索十分高效，但是辅助索引搜索需要检索两遍索引：首先检索辅助索引获得主键，然后用主键到主索引中检索获得记录。
 
