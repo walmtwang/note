@@ -142,7 +142,7 @@ show engines;
 - MyIASM和Innodb都使用了树这种数据结构做为索引。
 - 下面我接着讲这两种引擎使用的索引结构，讲到这里，首先应该谈一下B-Tree和B+Tree。
 
-### MyIASM引擎的索引结构
+### MyISAM引擎的索引结构
 
 - MyISAM引擎的索引结构为**B+Tree**，其中B+Tree的**数据域存储的内容为实际数据的地址**，也就是说它的索引和实际的数据是分开的，只不过是用索引指向了实际的数据，这种索引就是所谓的**非聚集索引**。如下图所示：![](https://github.com/walmt/interview_questions/blob/master/数据库/img/1.png?raw=true)
 - 这里设表一共有三列，假设我们以Col1为主键，则上图是一个MyISAM表的主索引（Primary key）示意。可以看出MyISAM的索引文件仅仅保存数据记录的地址。
