@@ -73,7 +73,7 @@ public static ExecutorService newFixedThreadPool(int nThreads) {
 
 - FixedThreadPool的corePoolSize和maximumPoolSize都被设置为创建FixedThreadPool时指定的参数nThreads。
 - 当线程池中的线程数大于corePoolSize时，keepAliveTime为多余的空闲线程等待新任务的最长时间，超过这个时间后多余的线程将被终止。这里把keepAliveTime设置为0L，意味着多余的空闲线程会被立即终止。
-- FixedThreadPool的execute()方法的运行示意图如图所示。![](https://github.com/walmt/interview_questions/blob/master/Java/img/6.png?raw=true)
+- FixedThreadPool的execute()方法的运行示意图如图所示。![](img/6.png?raw=true)
 - 工作过程：
   1. 如果当前运行的线程数少于corePoolSize，则创建新线程来执行任务。
   2. 在线程池完成预热之后（当前运行的线程数等于corePoolSize），将任务加入LinkedBlockingQueue。
@@ -99,7 +99,7 @@ public static ExecutorService newSingleThreadExecutor() {
 ```
 
 - SingleThreadExecutor的corePoolSize和maximumPoolSize被设置为1。其他参数与FixedThreadPool相同。
-- SingleThreadExecutor的运行示意图如图所示。![](https://github.com/walmt/interview_questions/blob/master/Java/img/7.png?raw=true)
+- SingleThreadExecutor的运行示意图如图所示。![](img/7.png?raw=true)
 - SingleThreadExecutor的工作原理与FixedThreadPool一样，唯一区别就是SingleThreadExecutor只会创建一个线程去执行任务。
 
 ##### CachedThreadPool详解
@@ -120,7 +120,7 @@ public static ExecutorService newCachedThreadPool() {
 - FixedThreadPool和SingleThreadExecutor使用无界队列LinkedBlockingQueue作为线程池的工作队列，CachedThreadPool使用没有容量的SynchronousQueue作为线程池的工作队列，但CachedThreadPool的maximumPool是无界的。
 - 这意味着，如果主线程提交任务的速度高于maximumPool中线程处理任务的速度时，CachedThreadPool会不断创建新线程。
 - 极端情况下，CachedThreadPool会因为创建过多线程而耗尽CPU和内存资源。
-- CachedThreadPool的execute()方法的执行示意图如图所示。![](https://github.com/walmt/interview_questions/blob/master/Java/img/8.png?raw=true)
+- CachedThreadPool的execute()方法的执行示意图如图所示。![](img/8.png?raw=true)
 - 工作原理：
   1. 首先执行`SynchronousQueue.offer(Runnable task)`。
      - 如果当前maximumPool中有空闲线程正在执行`SynchronousQueue.poll(keepAliveTime，TimeUnit.NANOSECONDS)`，那么主线程执行offer操作与空闲线程执行的poll操作配对成功，主线程把任务交给空闲线程执行，execute()方法执行完成；
@@ -132,7 +132,7 @@ public static ExecutorService newCachedThreadPool() {
      - 如果60秒钟内主线程提交了一个新任务（主线程执行步骤1）），那么这个空闲线程将执行主线程提交的新任务；
      - 否则，这个空闲线程将终止。
      - 由于空闲60秒的空闲线程会被终止，因此长时间保持空闲的CachedThreadPool不会使用任何资源。
-- 前面提到过，SynchronousQueue是一个没有容量的阻塞队列。每个插入操作必须等待另一个线程的对应移除操作，反之亦然。CachedThreadPool使用SynchronousQueue，把主线程提交的任务传递给空闲线程执行。CachedThreadPool中任务传递的示意图如图所示。![](https://github.com/walmt/interview_questions/blob/master/Java/img/9.png?raw=true)
+- 前面提到过，SynchronousQueue是一个没有容量的阻塞队列。每个插入操作必须等待另一个线程的对应移除操作，反之亦然。CachedThreadPool使用SynchronousQueue，把主线程提交的任务传递给空闲线程执行。CachedThreadPool中任务传递的示意图如图所示。![](img/9.png?raw=true)
 
 ##### ScheduledThreadPoolExecutor详解
 
@@ -143,7 +143,7 @@ public static ExecutorService newCachedThreadPool() {
 
 ##### ScheduledThreadPoolExecutor的运行机制
 
-- cheduledThreadPoolExecutor的执行示意图（本文基于JDK 6）如图所示。![](https://github.com/walmt/interview_questions/blob/master/Java/img/10.png?raw=true)
+- cheduledThreadPoolExecutor的执行示意图（本文基于JDK 6）如图所示。![](img/10.png?raw=true)
 - DelayQueue是一个无界队列，所以ThreadPoolExecutor的maximumPoolSize在ScheduledThreadPoolExecutor中没有什么意义（设置maximumPoolSize的大小没有什么效果）。
 - ScheduledThreadPoolExecutor的执行主要分为两大部分。
   1. 当调用ScheduledThreadPoolExecutor的`scheduleAtFixedRate()`方法或者`scheduleWithFixedDelay()`方法时，会向ScheduledThreadPoolExecutor的DelayQueue添加一个实现了RunnableScheduledFutur接口的ScheduledFutureTask。
@@ -164,7 +164,7 @@ public static ExecutorService newCachedThreadPool() {
   - 排序时，time小的排在前面（时间早的任务将被先执行）。
   - 如果两个ScheduledFutureTask的time相同，就比较sequenceNumber，sequenceNumber小的排在前面（也就是说，如果两个任务的执行时间相同，那么先提交的任务将被先执行）。
 - 首先，让我们看看ScheduledThreadPoolExecutor中的线程执行周期任务的过程。
-- 下图是ScheduledThreadPoolExecutor中的线程1执行某个周期任务的4个步骤。![](https://github.com/walmt/interview_questions/blob/master/Java/img/11.png?raw=true)
+- 下图是ScheduledThreadPoolExecutor中的线程1执行某个周期任务的4个步骤。![](img/11.png?raw=true)
 - 下面是对这4个步骤的说明。
   1. 线程1从DelayQueue中获取已到期的ScheduledFutureTask（DelayQueue.take()）。到期任务是指ScheduledFutureTask的time大于等于当前时间。
   2. 线程1执行这个ScheduledFutureTask。

@@ -15,8 +15,8 @@
     - 而反转则是由容器来帮忙创建及注入依赖对象；
     - 为何是反转？**因为由容器帮我们查找及注入依赖对象，对象只是被动的接受依赖对象，所以是反转；**
     - **哪些方面反转了？依赖对象的获取被反转了。**
-  - 用图例说明一下，传统程序设计如图所示，都是主动去创建相关对象然后再组合起来：![](https://github.com/walmt/interview_questions/blob/master/Java/img/1.jpg?raw=true)
-  - 当有了IoC/DI的容器后，在客户端类中不再主动去创建这些对象了，如下图所示：![](https://github.com/walmt/interview_questions/blob/master/Java/img/2.JPG?raw=true)
+  - 用图例说明一下，传统程序设计如图所示，都是主动去创建相关对象然后再组合起来：![](img/1.jpg?raw=true)
+  - 当有了IoC/DI的容器后，在客户端类中不再主动去创建这些对象了，如下图所示：![](img/2.JPG?raw=true)
 
 ### IoC能做什么
 

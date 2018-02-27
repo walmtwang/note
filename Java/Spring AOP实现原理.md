@@ -67,7 +67,7 @@
 
 ### Spring AOP组件
 
-![](https://github.com/walmt/interview_questions/blob/master/Java/img/1.png?raw=true)
+![](img/1.png?raw=true)
 
 ### 如何使用Spring AOP
 

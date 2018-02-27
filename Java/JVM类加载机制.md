@@ -7,7 +7,7 @@
 ### 类加载的时机
 
 - 类从被加载到虚拟机内存中开始，到卸载出内存为止，它的整个生命周期包括：加载（*Loading*）、验证（*Verification*）、准备（*Preparation*）、解析（*Resolution*）、初始化（*Initialization*）、使用（*Using*）和卸载（*Unloading*）7 个阶段。
-- 其中验证、准备、解析3个部分统称为连接（*Linking*），这 7 个阶段的发生顺序如所示。![](https://github.com/walmt/interview_questions/blob/master/Java/img/4.png?raw=true)
+- 其中验证、准备、解析3个部分统称为连接（*Linking*），这 7 个阶段的发生顺序如所示。![](img/4.png?raw=true)
 
 ### 类加载顺序
 
@@ -116,7 +116,7 @@
   - 扩展类加载器（*Extension ClassLoader*）：这个加载器由 sun.misc.Launcher$ExtClassLoader 实现，它负责加载<JAVA_HOME>\lib\ext 目录中的，或者被 java.ext.dirs 系统变量所指定的路径中的所有类库，开发者可以直接使用扩展类加载器。
   - 应用程序类加载器（*Application ClassLoader*）：这个类加载器由 sun.misc.Launcher$App-ClassLoader 实现。
 - 我们的应用程序都是由这 3 种类加载器互相配合进行加载的，如果有必要，还可以加入自己定义的类加载器。
-- 这些类加载器之间的关系：![](https://github.com/walmt/interview_questions/blob/master/Java/img/5.png?raw=true)
+- 这些类加载器之间的关系：![](img/5.png?raw=true)
   - 这种层次关系，称为类加载器的双亲委派模型（*Parents Delegatio nModel*）。
   - 双亲委派模型要求除了顶层的启动类加载器外，其余的类加载器都应当有自己的父类加载器。
   - 这里类加载器之间的父子关系一般不会以继承（*Inheritance*）的关系来实现，而是都使用组合（*Composition*）关系来复用父加载器的代码。
