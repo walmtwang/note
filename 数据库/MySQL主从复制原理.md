@@ -30,5 +30,18 @@
   - 主库会生成一个 log dump 线程，用来给从库 i/o线程传binlog；
   - SQL 线程，会读取relay log文件中的日志，并解析成具体操作，来实现主从的操作一致，而最终数据一致；
 
-![](https://github.com/walmt/interview_questions/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/img/4.png?raw=true)
+![](img/4.png?raw=true)
 
+### 问题及解决方法
+
+- mysql主从复制存在的问题：
+  - 主库宕机后，数据可能丢失。
+  - 从库只有一个sql Thread，主库写压力大，复制很可能延时。
+- 解决方法：
+  - 半同步复制---解决数据丢失的问题。
+  - 并行复制----解决从库复制延迟的问题。
+
+### 半同步复制
+
+- mysql semi-sync（半同步复制）：
+  - ​
