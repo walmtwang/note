@@ -144,9 +144,9 @@ show engines;
 
 ### MyISAM引擎的索引结构
 
-- MyISAM引擎的索引结构为**B+Tree**，其中B+Tree的**数据域存储的内容为实际数据的地址**，也就是说它的索引和实际的数据是分开的，只不过是用索引指向了实际的数据，这种索引就是所谓的**非聚集索引**。如下图所示：![](https://github.com/walmt/interview_questions/blob/master/数据库/img/1.png?raw=true)
+- MyISAM引擎的索引结构为**B+Tree**，其中B+Tree的**数据域存储的内容为实际数据的地址**，也就是说它的索引和实际的数据是分开的，只不过是用索引指向了实际的数据，这种索引就是所谓的**非聚集索引**。如下图所示：![](img/1.png?raw=true)
 - 这里设表一共有三列，假设我们以Col1为主键，则上图是一个MyISAM表的主索引（Primary key）示意。可以看出MyISAM的索引文件仅仅保存数据记录的地址。
-- 在MyISAM中，主索引和辅助索引（Secondary key）在结构上没有任何区别，只是主索引要求key是唯一的，而辅助索引的key可以重复。如果我们在Col2上建立一个辅助索引，则此索引的结构如下图所示：![](https://github.com/walmt/interview_questions/blob/master/数据库/img/2.png?raw=true)
+- 在MyISAM中，主索引和辅助索引（Secondary key）在结构上没有任何区别，只是主索引要求key是唯一的，而辅助索引的key可以重复。如果我们在Col2上建立一个辅助索引，则此索引的结构如下图所示：![](img/2.png?raw=true)
 - 同样也是一颗B+Tree，data域保存数据记录的地址。因此，MyISAM中索引检索的算法为首先按照B+Tree搜索算法搜索索引，如果指定的Key存在，则取出其data域的值，然后以data域的值为地址，读取相应数据记录。
 
 ### Innodb引擎的索引结构
@@ -171,14 +171,14 @@ show engines;
     - 如果没有显式指定，则MySQL系统会自动选择一个可以唯一标识数据记录的列作为主键。
     - 如果不存在这种列，则MySQL自动为InnoDB表生成一个隐含字段作为主键，这个字段长度为6个字节，类型为长整形。
 
-  ![](https://github.com/walmt/interview_questions/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/img/1.jpg?raw=true)
+  ![](img/1.jpg?raw=true)
 
 - 第二个与MyISAM索引的不同是InnoDB的辅助索引data域存储相应记录主键的值而不是地址。
 
   - 换句话说，InnoDB的所有辅助索引都引用主键作为data域。
   - 例如，下图为定义在Col3上的一个辅助索引：
 
-  ![](https://github.com/walmt/interview_questions/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/img/2.jpg?raw=true)
+  ![](img/2.jpg?raw=true)
 
 - 这里以英文字符的ASCII码作为比较准则。聚集索引这种实现方式使得按主键的搜索十分高效，但是辅助索引搜索需要检索两遍索引：首先检索辅助索引获得主键，然后用主键到主索引中检索获得记录。
 

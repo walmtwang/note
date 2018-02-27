@@ -22,8 +22,8 @@
 
 ### HTTPS的工作原理
 
-- 我们都知道HTTPS能够加密信息，以免敏感信息被第三方获取，所以很多银行网站或电子邮箱等等安全级别较高的服务都会采用HTTPS协议。![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/4.jpg?raw=true)
-- 客户端在使用HTTPS方式与Web服务器通信时有以下几个步骤，如图所示。![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/1.gif?raw=true)
+- 我们都知道HTTPS能够加密信息，以免敏感信息被第三方获取，所以很多银行网站或电子邮箱等等安全级别较高的服务都会采用HTTPS协议。![](img/4.jpg?raw=true)
+- 客户端在使用HTTPS方式与Web服务器通信时有以下几个步骤，如图所示。![](img/1.gif?raw=true)
   1. 客户使用HTTPS的URL访问Web服务器，要求与Web服务器建立SSL连接。
   2. Web服务器收到客户端请求后，会将网站的证书信息（证书中包含公钥）传送一份给客户端。
   3. 客户端的浏览器与Web服务器开始协商SSL连接的安全等级，也就是信息加密的等级。

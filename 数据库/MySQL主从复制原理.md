@@ -9,7 +9,7 @@
   4. 多主一从---5.7开始支持
   5. 联级复制
 
-![](https://github.com/walmt/interview_questions/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/img/3.png?raw=true)
+![](img/3.png?raw=true)
 
 ### 用途及条件
 

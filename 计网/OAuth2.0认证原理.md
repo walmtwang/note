@@ -4,7 +4,7 @@
 
 - 第三方登录是应用开发中的常用功能，通过第三方登录，我们可以更加容易的吸引用户来到我们的应用中。
 - 实际上，大多数网站提供的第三方登录都遵循OAuth协议，虽然大多数网站的细节处理都是不一致的，甚至会基于OAuth协议进行扩展，但大体上其流程是一定的。
-- OAuth协议目前已经升级到了2.0，大部分的网站也是支持OAuth2.0的，因此让我们看看OAuth2.0。![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/1.png?raw=true)
+- OAuth协议目前已经升级到了2.0，大部分的网站也是支持OAuth2.0的，因此让我们看看OAuth2.0。![](img/1.png?raw=true)
 - 上图中所涉及到的对象分别为：
   - Client 第三方应用，我们的应用就是一个Client。
   - Resource Owner 资源所有者，即用户。
@@ -34,13 +34,13 @@
 ###### 我们以Github为例，看看主流的第三方登录是如何满足上述三个特性的。
 
 - 第0步. 引导用户进行授权：
-  - 当用户希望使用第三方登录进行登录时，第三方应用会通过类似下图【快速登录】的方式将用户引导至授权页面，为了和OAuth基本流程一致，我们将这一步定义为第0步。![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/2.png?raw=true)
+  - 当用户希望使用第三方登录进行登录时，第三方应用会通过类似下图【快速登录】的方式将用户引导至授权页面，为了和OAuth基本流程一致，我们将这一步定义为第0步。![](img/2.png?raw=true)
 - 第0.5步. 用户身份验证：
-  - 当我们点击Github的图标，我们会进入到Github应用下面，此时实际上进行了一次用户身份的验证，之前没有登录Github的用户需要输入Github的账号密码，已登录的用户Github会根据Session进行身份确认。此操作我们称为0.5步。接下来正式进入OAuth2的流程。![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/3.png?raw=true)
+  - 当我们点击Github的图标，我们会进入到Github应用下面，此时实际上进行了一次用户身份的验证，之前没有登录Github的用户需要输入Github的账号密码，已登录的用户Github会根据Session进行身份确认。此操作我们称为0.5步。接下来正式进入OAuth2的流程。![](img/3.png?raw=true)
 - 第1步. 用户授权：
   - 用户身份确认后会进入下面这个页面，该页面由授权服务器提供，授权服务器会告诉用户该第三方在授权服务器中提交的相关信息（如果需要实现第三方登录功能，第三方应用需要向Github、微博等应用中提交应用的相关信息，不同服务可能会需要审核等不同的步骤），以及授权后第三方应用能够获取哪些资源。在Github中，最基础的认证可以访问用户的公共信息。如果用户同意授权，需要主动的点击【Authorize application】按钮。
 
-    ![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/4.png?raw=true)
+    ![](img/4.png?raw=true)
 - 第2步. 返回用户凭证（code）：
   - 当用户点击按钮同意授权后，授权服务器将生成一个用户凭证（code），此时授权服务器如何将用户凭证（code）传递给第三方应用呢？
   - 当我们向授权服务器提交应用信息时，通常需要填写一个redirect_uri，当我们引导用户进入授权页面时，也会附带一个redirect_uri的信息。

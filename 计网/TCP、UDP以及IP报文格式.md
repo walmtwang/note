@@ -1,6 +1,6 @@
 # [TCP报文格式](http://www.cnblogs.com/xinyuyuanm/archive/2013/04/17/3026279.html)
 
-![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/1.jpg?raw=true)
+![](img/1.jpg?raw=true)
 
 - 源端口（Source Port）：
   - 16位的源端口字段包含初始化通信的端口号。源端口和IP地址的作用是标识报文的返回地址。
@@ -41,7 +41,7 @@
 
 # [UDP报文格式](http://blog.csdn.net/kernel_jim_wu/article/details/7447377)
 
-![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/5.png?raw=true)
+![](img/5.png?raw=true)
 
 - 源端口号和目的端口号如上和TCP的相同。
 - UDP长度：UDP报文的字节长度（包括首部和数据）。
@@ -49,11 +49,11 @@
 
 # [IP报文格式](http://blog.csdn.net/kernel_jim_wu/article/details/7447377)
 
-![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/6.png?raw=true)
+![](img/6.png?raw=true)
 
 - 版本：指IP协议的版本。
 - 首部长度：首部的长度。
-- 服务类型：如下图：![](https://github.com/walmt/interview_questions/blob/master/%E8%AE%A1%E7%BD%91/img/7.png?raw=true)
+- 服务类型：如下图：![](img/7.png?raw=true)
   - 其中优先级用来区别优先级别不同的IP报文。
   - D表示要求有更低的时延。
   - T表示要求有更高的吞吐量。
