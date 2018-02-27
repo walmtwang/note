@@ -1,0 +1,34 @@
+# [mysql 主从复制原理](http://www.cnblogs.com/Aiapple/p/5792939.html)
+
+### 主从形式
+
+- MySQL主从复制：
+  1. 一主一从
+  2. 主主复制
+  3. 一主多从---扩展系统读取的性能，因为读是在从库读取的；
+  4. 多主一从---5.7开始支持
+  5. 联级复制
+
+![](https://github.com/walmt/interview_questions/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/img/3.png?raw=true)
+
+### 用途及条件
+
+- MySQL主从复制用途：
+  - 实时灾备，用于故障切换。
+  - 读写分离，提供查询服务。
+  - 备份，避免影响业务。
+- 主从部署必要条件：
+  - 主库开启binlog日志（设置log-bin参数）。
+  - 主从server-id不同。
+  - 从库服务器能连通主库。
+
+### 主从原理
+
+- MySQL主从复制原理：
+  - 从库生成两个线程，一个I/O线程，一个SQL线程；
+  - i/o线程去请求主库 的binlog，并将得到的binlog日志写到relay log（中继日志） 文件中；
+  - 主库会生成一个 log dump 线程，用来给从库 i/o线程传binlog；
+  - SQL 线程，会读取relay log文件中的日志，并解析成具体操作，来实现主从的操作一致，而最终数据一致；
+
+![](https://github.com/walmt/interview_questions/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/img/4.png?raw=true)
+
