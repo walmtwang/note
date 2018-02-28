@@ -1,2 +1,2 @@
-# interview_questions
-Java后台面试题整合，文章标题链接了出处。
+# note
+- 本人整理的有必要的知识点，适合后台开发方向，特别是Java后台。
