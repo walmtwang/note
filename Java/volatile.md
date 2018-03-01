@@ -25,3 +25,19 @@
 
   1. 第一个操作是普通变量读/写，第二个是Volatile变量的读。
   2. 第一个操作是Volatile变量的写,第二个是普通变量的读/写。
+
+### 内存屏障插入策略
+
+- JMM基于保守策略的JMM内存屏障插入策略：
+  1. 在每个volatile写操作的前面插入一个StoreStore屏障。
+  2. 在每个volatile写操作的后面插入一个SotreLoad屏障。
+  3. 在每个volatile读操作的后面插入一个LoadLoad屏障。
+  4. 在每个volatile读操作的后面插入一个LoadStore屏障。
+
+![](img\12.png)![](img\13.png)![](img\14.png)
+
+- x86处理器仅仅会对写-读操作做重排序。
+  - 因此会省略掉读-读、读-写和写-写操作做重排序的内存屏障。
+  - 在x86中，JMM仅需在volatile后面插入一个StoreLoad屏障即可正确实现volatile写-读的内存语义。
+  - 这意味着在x86处理器中，volatile写的开销比volatile读的大，因为StoreLoad屏障开销比较大。
+
