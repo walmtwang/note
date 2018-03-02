@@ -1,6 +1,6 @@
 ### 获取及解析配置文件
 
-![](img\21.png)
+![](img/21.png)
 
 1. 通过继承自AbstractBeanDefinitionReader中的方法，来使用ResourceLoader将资源文件路径转换为对应的Resource文件。
 
@@ -9,7 +9,7 @@
      - 在Java中，将不同来源的资源抽象成URL，通过注册不同的handler（URLStreamHandler）来处理。
      - 一般handler的类型使用不同前缀来识别，然而URL没有默认定义相对ClassPath或ServletContext等资源的handler，虽然可以注册自己的URLStreamHandler，但需要了解URL实现机制以及URL也没提供一些基本方法（如检查当前资源是否存在，是否可读等），因而Spring对其内部使用到的资源实现了自己的抽象结构：Resource接口来封装底层资源。
 
-   ![](img\22.png)
+   ![](img/22.png)
 
 2. 通过DocumentLoader对Resource文件进行转换，将Resource文件转换为Document文件。
 
