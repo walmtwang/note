@@ -11,13 +11,13 @@
   - 在内部需要有一个统一的关于对象的定义，所有外部的描述都必须转化成统一的描述定义。
   - 如何对不同的配置文件进行解析？需要对不同的配置文件语法，采用不同的解析器。
 
-## Spring IOC体系结构
+## Spring IOCf体系结构
 
 ### **BeanFactory**
 
 - Spring Bean的创建是典型的工厂模式，这一系列的Bean工厂，也即IOC容器为开发者管理对象间的依赖关系提供了很多便利和基础服务，在Spring中有许多的IOC容器的实现供用户选择和使用，其相互关系如下：
 
-  ![](img\1.x-png)
+  ![](img/1.x-png)
 
 - 其中BeanFactory作为最顶层的一个接口类，它定义了IOC容器的基本功能规范，BeanFactory 有三个子类：ListableBeanFactory、HierarchicalBeanFactory 和AutowireCapableBeanFactory。
 
@@ -71,11 +71,11 @@ public interface BeanFactory {
 
 - SpringIOC容器管理了我们定义的各种Bean对象及其相互的关系，Bean对象在Spring实现中是以BeanDefinition来描述的，其继承体系如下：
 
-  ![](img\2.x-png)
+  ![](img/2.x-png)
 
 - Bean 的解析过程非常复杂，功能被分的很细，因为这里需要被扩展的地方很多，必须保证有足够的灵活性，以应对可能的变化。Bean 的解析主要就是对 Spring 配置文件的解析。这个解析过程主要通过下图中的类完成：
 
-  ![](img\3.x-png)
+  ![](img/3.x-png)
 
 ## IoC容器的初始化
 
@@ -83,7 +83,7 @@ public interface BeanFactory {
 
 - 我们以ApplicationContext为例讲解，ApplicationContext系列容器也许是我们最熟悉的，因为web项目中使用的XmlWebApplicationContext就属于这个继承体系，还有ClasspathXmlApplicationContext等，其继承体系如下图所示：
 
-  ![](img\4.x-png)
+  ![](img/4.x-png)
 
 - ApplicationContext允许上下文嵌套，通过保持父上下文可以维持一个上下文体系。
 
