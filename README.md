@@ -2,7 +2,7 @@
 - 本人整理的学习笔记，适合后台开发方向，特别是Java后台。
 
 
-# [Java](https://github.com/walmt/note/tree/master/Java)
+# Java
 
 ### 基础
 
@@ -52,7 +52,7 @@
 - [Servlet生命周期及工作原理](Java/Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%8F%8A%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.md)
 - [tomcat工作原理简介](Java/tomcat%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E7%AE%80%E4%BB%8B.md)
 
-# [数据库](https://github.com/walmt/note/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93)
+# 数据库
 
 - [MySQL B+树索引和哈希索引的区别](%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%20B%2B%E6%A0%91%E7%B4%A2%E5%BC%95%E5%92%8C%E5%93%88%E5%B8%8C%E7%B4%A2%E5%BC%95%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 - [MySQL主从复制原理](%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%E5%8E%9F%E7%90%86.md)
@@ -71,7 +71,7 @@
 - [数据库范式详解](%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F%E8%AF%A6%E8%A7%A3.md)
 - [最左前缀原则](%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%9C%80%E5%B7%A6%E5%89%8D%E7%BC%80%E5%8E%9F%E5%88%99.md)
 
-# [算法&数据结构](https://github.com/walmt/note/tree/master/%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+# 算法&数据结构
 
 - [二叉树相关算法](%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95.md)
 - [堆的相关算法](%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A0%86%E7%9A%84%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95.md)
@@ -81,7 +81,7 @@
 - [敏感词DFA过滤算法（Java实现）](%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%8F%E6%84%9F%E8%AF%8DDFA%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95%EF%BC%88Java%E5%AE%9E%E7%8E%B0%EF%BC%89.md)
 - [剑指offer编程题代码答案（Java实现）](https://github.com/walmt/note/tree/master/%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%89%91%E6%8C%87offer%E7%BC%96%E7%A8%8B%E9%A2%98)
 
-# [计网](https://github.com/walmt/note/tree/master/%E8%AE%A1%E7%BD%91)
+# 计网
 
 - [DNS解析过程](%E8%AE%A1%E7%BD%91/DNS%E8%A7%A3%E6%9E%90%E8%BF%87%E7%A8%8B.md)
 - [HTTP与HTTPS的区别](%E8%AE%A1%E7%BD%91/HTTP%E4%B8%8EHTTPS%E7%9A%84%E5%8C%BA%E5%88%AB.md)
@@ -94,6 +94,6 @@
 - [TCP拥塞控制](%E8%AE%A1%E7%BD%91/TCP%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6.md)
 - [tcp的三次握手和四次挥手](%E8%AE%A1%E7%BD%91/tcp%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B.md)
 
-# [设计模式](https://github.com/walmt/note/tree/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
+# 设计模式
 
 - [常用的设计模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%B8%B8%E7%94%A8%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
