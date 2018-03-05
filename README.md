@@ -46,6 +46,7 @@
 - [简谈Java GC机制](Java/%E7%AE%80%E8%B0%88Java%20GC%E6%9C%BA%E5%88%B6.md)
 - [JVM内存模型](Java/JVM%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md)
 - [Java7、Java8的JVM内存变化](Java/Java7%E3%80%81Java8%E7%9A%84JVM%E5%86%85%E5%AD%98%E5%8F%98%E5%8C%96.md)
+- [HotSpot七种垃圾收集器](Java/HotSpot%E4%B8%83%E7%A7%8D%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
 
 ### tomcat
 
