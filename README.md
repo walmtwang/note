@@ -49,6 +49,7 @@
 - [JVM内存模型](Java/JVM%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md)
 - [Java7、Java8的JVM内存变化](Java/Java7%E3%80%81Java8%E7%9A%84JVM%E5%86%85%E5%AD%98%E5%8F%98%E5%8C%96.md)
 - [HotSpot七种垃圾收集器](Java/HotSpot%E4%B8%83%E7%A7%8D%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
+- [HotSpot的即时编译器](https://github.com/walmt/note/blob/master/Java/HotSpot%E7%9A%84%E5%8D%B3%E6%97%B6%E7%BC%96%E8%AF%91%E5%99%A8.md)
 
 ### tomcat
 
