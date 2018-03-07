@@ -84,6 +84,7 @@
 - [B树与B+树](%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/B%E6%A0%91%E4%B8%8EB%2B%E6%A0%91.md)
 - [敏感词DFA过滤算法（Java实现）](%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%8F%E6%84%9F%E8%AF%8DDFA%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95%EF%BC%88Java%E5%AE%9E%E7%8E%B0%EF%BC%89.md)
 - [剑指offer编程题代码答案（Java实现）](https://github.com/walmt/note/tree/master/%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%89%91%E6%8C%87offer%E7%BC%96%E7%A8%8B%E9%A2%98)
+- [背包问题（动态规划解法）](https://github.com/walmt/note/blob/master/%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%EF%BC%88%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%A7%A3%E6%B3%95%EF%BC%89.md)
 
 # 计网
 
