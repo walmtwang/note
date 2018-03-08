@@ -13,6 +13,7 @@
 - [Java反射机制](Java/Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6.md)
 - [Java调用C++](Java/Java%E8%B0%83%E7%94%A8C%2B%2B.md)
 - [String、StringBuffer和StringBuilder之间的区别与联系](Java/String%E3%80%81StringBuffer%E5%92%8CStringBuilder%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB.md)
+- [四种引用方式的区别](https://github.com/walmt/note/blob/master/Java/%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8%E6%96%B9%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 - [五种单例模式](Java/%E4%BA%94%E7%A7%8D%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
 
 ### 集合
@@ -82,6 +83,7 @@
 - [链表相关算法](%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%93%BE%E8%A1%A8%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95.md)
 - [八大排序算法](%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95.md)
 - [B树与B+树](%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/B%E6%A0%91%E4%B8%8EB%2B%E6%A0%91.md)
+- [红黑树](https://github.com/walmt/note/blob/master/%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%A2%E9%BB%91%E6%A0%91.md)
 - [敏感词DFA过滤算法（Java实现）](%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%8F%E6%84%9F%E8%AF%8DDFA%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95%EF%BC%88Java%E5%AE%9E%E7%8E%B0%EF%BC%89.md)
 - [剑指offer编程题代码答案（Java实现）](https://github.com/walmt/note/tree/master/%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%89%91%E6%8C%87offer%E7%BC%96%E7%A8%8B%E9%A2%98)
 - [背包问题（动态规划解法）](https://github.com/walmt/note/blob/master/%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%EF%BC%88%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%A7%A3%E6%B3%95%EF%BC%89.md)
