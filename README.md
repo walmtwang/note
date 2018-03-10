@@ -15,6 +15,8 @@
 - [String、StringBuffer和StringBuilder之间的区别与联系](Java/String%E3%80%81StringBuffer%E5%92%8CStringBuilder%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB.md)
 - [四种引用方式的区别](https://github.com/walmt/note/blob/master/Java/%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8%E6%96%B9%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 - [五种单例模式](Java/%E4%BA%94%E7%A7%8D%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
+- [Java的基本思想](https://github.com/walmt/note/blob/master/Java/Java%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3.md)
+- [static和final的区别和用途](https://github.com/walmt/note/blob/master/Java/static%E5%92%8Cfinal%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E7%94%A8%E9%80%94.md)
 
 ### 集合
 
