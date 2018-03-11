@@ -23,7 +23,7 @@
   WHERE customerid NOT IN (SELECT customerid FROM salesinfo)
   ```
 
-- **如果使用连接（JOIN）来完成这个查询工作，速度将会快很多。**尤其是当salesinfo表中对CustomerID建有索引的话，性能将会更好，查询如下：
+- **如果使用连接（JOIN）来完成这个查询工作，速度将会快很多**。尤其是当salesinfo表中对CustomerID建有索引的话，性能将会更好，查询如下：
 
   ```SQL
   SELECT * FROM customerinfo
