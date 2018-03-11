@@ -28,7 +28,7 @@
   ```SQL
   SELECT * FROM customerinfo
   LEFT JOIN salesinfo ON customerinfo.customerid = salesinfo.customerid
-  WHERE salesinfo.customerid IS NULL
+  WHERE ...;
   ```
 
   - 连接（JOIN）..之所以更有效率一些，是因为MySQL不需要在内存中创建临时表来完成这个逻辑上的需要两个步骤的查询工作。
