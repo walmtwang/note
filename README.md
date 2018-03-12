@@ -36,6 +36,7 @@
 - [悲观锁与乐观锁](Java/%E6%82%B2%E8%A7%82%E9%94%81%E4%B8%8E%E4%B9%90%E8%A7%82%E9%94%81.md)
 - [wait()及notify()方法](Java/wait()%E5%8F%8Anotify()%E6%96%B9%E6%B3%95.md)
 - [ThreadLocal详解](Java/ThreadLocal%E8%AF%A6%E8%A7%A3.md)
+- [阻塞队列](Java/%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97.md)
 
 ### Spring
 
