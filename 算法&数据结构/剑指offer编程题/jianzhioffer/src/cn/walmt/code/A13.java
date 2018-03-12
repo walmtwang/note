@@ -55,6 +55,35 @@ public class A13 {
         if (array == null || array.length == 0) {
             return;
         }
+
+        for (int i = 1; i < array.length; i++) {
+            if (isOdd(array[i])) {
+                int temp = array[i];
+                int j = i;
+                for (; j > 0; --j) {
+                    if (isEven(array[j - 1])) {
+                        array[j] = array[j - 1];
+                    } else {
+                        break;
+                    }
+                }
+                array[j] = temp;
+            }
+        }
+    }
+
+    private boolean isEven(int number) {
+        return (number & 1) == 0;
+    }
+
+    private boolean isOdd(int number) {
+        return (number & 1) == 1;
+    }
+
+    /*public void reOrderArray(int[] array) {
+        if (array == null || array.length == 0) {
+            return;
+        }
         int odd = nextOdd(0, array);
         int even = nextEven(0, array);
         if (odd < even) {
@@ -70,7 +99,7 @@ public class A13 {
             array[even + 1] = temp;
             odd = nextOdd(odd + 1, array);
         }
-    }
+    }*/
 
     private int nextEven(int index, int[] array) {
         while (index < array.length) {

@@ -17,6 +17,10 @@ public class A43 {
 
     /**
      * 通过字符串逆序
+     * abcXYZdef 左移3
+     * 反转0 ~ 3: cbaXYZdef
+     * 反转3 ~ length-1: cbafedZYX
+     * 反转0~ length-1: XYZdefabc
      * @param str
      * @param n
      * @return
