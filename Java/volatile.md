@@ -30,7 +30,7 @@
 
 - JMM基于保守策略的JMM内存屏障插入策略：
   1. 在每个volatile写操作的前面插入一个StoreStore屏障。
-  2. 在每个volatile写操作的后面插入一个SotreLoad屏障。
+  2. 在每个volatile写操作的后面插入一个StoreLoad屏障。
   3. 在每个volatile读操作的后面插入一个LoadLoad屏障。
   4. 在每个volatile读操作的后面插入一个LoadStore屏障。
 
