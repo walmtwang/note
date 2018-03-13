@@ -10,7 +10,6 @@ import java.util.Stack;
  */
 public class A5 {
 
-
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         if (root == null) {
