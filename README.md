@@ -25,7 +25,7 @@
 - [Arrays和Collections中的sort方法](Java/Arrays%E5%92%8CCollections%E4%B8%AD%E7%9A%84sort%E6%96%B9%E6%B3%95.md)
 - [List,Set和Map接口](Java/List%2CSet%E5%92%8CMap%E6%8E%A5%E5%8F%A3.md)
 
-### 线程
+### 并发
 
 - [Java线程](Java/Java%E7%BA%BF%E7%A8%8B.md)
 - [Java线程池](Java/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0.md)
@@ -37,6 +37,7 @@
 - [wait()及notify()方法](Java/wait()%E5%8F%8Anotify()%E6%96%B9%E6%B3%95.md)
 - [ThreadLocal详解](Java/ThreadLocal%E8%AF%A6%E8%A7%A3.md)
 - [阻塞队列](Java/%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97.md)
+- [并发工具类](Java/%E5%B9%B6%E5%8F%91%E5%B7%A5%E5%85%B7%E7%B1%BB.md)
 
 ### Spring
 
