@@ -30,6 +30,7 @@
 ### 并发
 
 - [Java线程](Java/Java%E7%BA%BF%E7%A8%8B.md)
+- [队列同步器（AQS）](Java/%E9%98%9F%E5%88%97%E5%90%8C%E6%AD%A5%E5%99%A8%EF%BC%88AQS%EF%BC%89.md)
 - [Java线程池](Java/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0.md)
 - [volatile](Java/volatile.md)
 - [内存屏障](Java/%E5%86%85%E5%AD%98%E5%B1%8F%E9%9A%9C.md)
