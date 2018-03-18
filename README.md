@@ -19,6 +19,8 @@
 - [五种单例模式](Java/%E4%BA%94%E7%A7%8D%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
 - [Java的基本思想](Java/Java%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3.md)
 - [static和final的区别和用途](Java/static%E5%92%8Cfinal%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E7%94%A8%E9%80%94.md)
+- [Java异常](Java/Java%E5%BC%82%E5%B8%B8.md)
+- [网络IO](Java/%E7%BD%91%E7%BB%9CIO.md)
 
 ### 集合
 
