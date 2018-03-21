@@ -133,6 +133,7 @@
 # 设计模式
 
 - [常用的设计模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%B8%B8%E7%94%A8%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
+- [Reactor模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/Reactor%E6%A8%A1%E5%BC%8F.md)
 
 ---
 
