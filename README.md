@@ -29,6 +29,9 @@
 
 ### 并发
 
+- [Java内存模型](Java/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md)
+
+
 - [Java线程](Java/Java%E7%BA%BF%E7%A8%8B.md)
 - [队列同步器（AQS）](Java/%E9%98%9F%E5%88%97%E5%90%8C%E6%AD%A5%E5%99%A8%EF%BC%88AQS%EF%BC%89.md)
 - [Java线程池](Java/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0.md)
@@ -108,6 +111,7 @@
 - [B树与B+树](算法&数据结构/B%E6%A0%91%E4%B8%8EB%2B%E6%A0%91.md)
 - [红黑树](算法&数据结构/%E7%BA%A2%E9%BB%91%E6%A0%91.md)
 - [敏感词DFA过滤算法（Java实现）](算法&数据结构/%E6%95%8F%E6%84%9F%E8%AF%8DDFA%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95%EF%BC%88Java%E5%AE%9E%E7%8E%B0%EF%BC%89.md)
+- [一致性Hash算法](%E7%AE%97%E6%B3%95%26%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%B8%80%E8%87%B4%E6%80%A7Hash%E7%AE%97%E6%B3%95.md)
 - [剑指offer编程题代码答案（Java实现）](算法&数据结构/%E5%89%91%E6%8C%87offer%E7%BC%96%E7%A8%8B%E9%A2%98)
 - [背包问题（动态规划解法）](算法&数据结构/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%EF%BC%88%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%A7%A3%E6%B3%95%EF%BC%89.md)
 - [前、中、后缀表达式](算法&数据结构/%E5%89%8D%E3%80%81%E4%B8%AD%E3%80%81%E5%90%8E%E7%BC%80%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
