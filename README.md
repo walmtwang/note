@@ -27,7 +27,7 @@
 - [Arrays和Collections中的sort方法](Java/Arrays%E5%92%8CCollections%E4%B8%AD%E7%9A%84sort%E6%96%B9%E6%B3%95.md)
 - [List,Set和Map接口](Java/List%2CSet%E5%92%8CMap%E6%8E%A5%E5%8F%A3.md)
 
-### 并发
+### 多线程
 
 - [Java内存模型](Java/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md)
 
