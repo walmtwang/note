@@ -100,6 +100,7 @@
 - [Redis持久化](%E6%95%B0%E6%8D%AE%E5%BA%93/Redis%E6%8C%81%E4%B9%85%E5%8C%96.md)
 - [基于redis实现的点赞功能设计思路详解](%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%9F%BA%E4%BA%8Eredis%E5%AE%9E%E7%8E%B0%E7%9A%84%E7%82%B9%E8%B5%9E%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF%E8%AF%A6%E8%A7%A3.md)
 - [redis和memcached的区别](%E6%95%B0%E6%8D%AE%E5%BA%93/redis%E5%92%8Cmemcached%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+- [Redis五种对象及其底层实现](%E6%95%B0%E6%8D%AE%E5%BA%93/Redis%E4%BA%94%E7%A7%8D%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%85%B6%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0.md)
 
 ---
 
