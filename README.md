@@ -69,6 +69,7 @@
 
 - [Servlet生命周期及工作原理](Java/Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%8F%8A%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.md)
 - [tomcat工作原理简介](Java/tomcat%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E7%AE%80%E4%BB%8B.md)
+- [tomcat架构](Java/tomcat%E6%9E%B6%E6%9E%84.md)
 
 ---
 
